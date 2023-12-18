@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { FishServiceService } from '../../service/fish-service.service';
-import { Fish } from '../../../../core/models/Fish';
+import { Level } from '../../../../core/models/Level';
+import {Fish} from "../../../../core/models/Fish";
 
 @Component({
   selector: 'app-fish-add-edit',

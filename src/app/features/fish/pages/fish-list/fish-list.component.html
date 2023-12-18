@@ -11,9 +11,9 @@
   <tbody>
   <tr *ngFor="let fish of fishes">
     <td>{{ fish.id }}</td>
-    <td>{{ fish.name }}</td>
+    <td>{{ fish.name}}</td>
     <td>{{ fish.averageWeight }}</td>
-    <td>{{ fish.level }}</td>
+    <td>{{ fish.level}}</td>
     <td>
       <button (click)="deleteFish(fish.id)" class="btn btn-outline-danger">
         <i class="bi bi-trash"></i>

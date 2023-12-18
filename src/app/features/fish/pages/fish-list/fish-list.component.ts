@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FishServiceService } from "../../service/fish-service.service";
-import { Fish } from "../../../../core/models/Fish";
+import {Fish} from "../../../../core/models/Fish";
 
 @Component({
   selector: 'app-fish-list',

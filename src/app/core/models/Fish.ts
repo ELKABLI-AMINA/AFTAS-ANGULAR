@@ -1,8 +1,11 @@
 import {Level} from "./Level";
 
-export  interface Fish{
+
+export interface Fish{
   id: number;
   name: string;
   averageWeight: number;
-  level: Level;
+  level :Level;
+
+
 }

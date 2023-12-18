@@ -11,6 +11,9 @@ import { FishListComponent } from './features/fish/pages/fish-list/fish-list.com
 import { FishAddEditComponent } from './features/fish/pages/fish-add-edit/fish-add-edit.component';
 import { AddEditCompetitionComponent } from './features/Competition/pages/add-edit-competition/add-edit-competition.component';
 import { ListCompetitionComponent } from './features/Competition/pages/list-competition/list-competition.component';
+import { ListLevelComponent } from './features/Level/pages/list-level/list-level.component';
+import { AddEditLevelComponent } from './features/Level/pages/add-edit-level/add-edit-level.component';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { ListCompetitionComponent } from './features/Competition/pages/list-comp
     FishListComponent,
     FishAddEditComponent,
     AddEditCompetitionComponent,
-    ListCompetitionComponent
+    ListCompetitionComponent,
+    ListLevelComponent,
+    AddEditLevelComponent
+
   ],
   imports: [
     BrowserModule,

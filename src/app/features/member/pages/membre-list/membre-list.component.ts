@@ -30,8 +30,5 @@ export class MembreListComponent implements OnInit{
       });
   }
 
-
-
-
 }
 
