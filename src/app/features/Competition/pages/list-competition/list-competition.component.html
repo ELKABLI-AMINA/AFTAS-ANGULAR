@@ -1,1 +1,36 @@
-<p>list-competition works!</p>
+<table class="table">
+  <thead>
+  <tr>
+    <th scope="col">#</th>
+    <th scope="col">Code</th>
+    <th scope="col">Date</th>
+    <th scope="col">Start Time</th>
+    <th scope="col">End Time</th>
+    <th scope="col">Participants</th>
+    <th scope="col">Location</th>
+    <th scope="col">Amount</th>
+    <th>Action</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let competition of competitions">
+    <td>{{ competition.id }}</td>
+    <td>{{ competition.code }}</td>
+    <td>{{ competition.date | date }}</td>
+    <td>{{ competition.startTime }}</td>
+    <td>{{ competition.endTime }}</td>
+    <td>{{ competition.numberOfParticipants }}</td>
+    <td>{{ competition.location }}</td>
+    <td>{{ competition.amount }}</td>
+
+    <td>
+      <button (click)="deleteCompetition(competition.id)" class="btn btn-outline-danger">
+        <i class="bi bi-trash"></i>
+      </button>
+    </td>
+  </tr>
+  </tbody>
+</table>
+<ng-template #noCompetitions>
+  <p>No competitions available.</p>
+</ng-template>
