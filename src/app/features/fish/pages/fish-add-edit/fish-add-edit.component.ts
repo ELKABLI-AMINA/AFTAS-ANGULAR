@@ -18,6 +18,7 @@ export class FishAddEditComponent implements OnInit {
     this.fishForm = this.fb.group({
       name: this.fb.control(''),
       averageWeight: this.fb.control(''),
+      level: this.fb.control(''),
     });
   }
 

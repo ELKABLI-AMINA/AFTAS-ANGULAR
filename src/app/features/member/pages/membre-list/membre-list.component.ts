@@ -9,6 +9,7 @@ import {Member} from "../../../../core/models/Member";
   styleUrls: ['./membre-list.component.css']
 })
 export class MembreListComponent implements OnInit{
+  public keyword : string="";
   members : Member[] =[];
   constructor( private memberService : MembreService) {
   }
@@ -19,7 +20,7 @@ export class MembreListComponent implements OnInit{
   private loadMember(): void{
     this.memberService.getAll().subscribe((members: any)=>{
       console.log("members =", members)
-      this.members = members.content;
+      this.members = members;
     });
   }
   deleteMember(num:number):void{
@@ -29,6 +30,10 @@ export class MembreListComponent implements OnInit{
         this.loadMember();
       });
   }
-
+   searchMember():void{
+    this.memberService.SearchMember(this.keyword).subscribe(
+      {next: (value) => { this.members = value}}
+    )
+   }
 }
 

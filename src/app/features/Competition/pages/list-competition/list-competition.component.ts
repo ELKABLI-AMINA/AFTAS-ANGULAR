@@ -18,7 +18,7 @@ export class ListCompetitionComponent {
   private loadCompetition(): void{
     this.competitionService.getAll().subscribe((competitions: any)=>{
       console.log("competitions =", competitions)
-      this.competitions = competitions.content;
+      this.competitions = competitions;
     });
   }
   deleteCompetition(id:number):void{

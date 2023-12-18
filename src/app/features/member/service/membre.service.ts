@@ -28,8 +28,9 @@ export class MembreService {
   delete(num: number): Observable<void> {
     return this.apiService.delete<void>(`${'/api/members'}/${num}`);
   }
-  findByNum(name: string): Observable<Member> {
-    return this.apiService.findbyNum<Member>('/api/members', name);
+  SearchMember(keyword: string): Observable<Member[]> {
+    return this.apiService.Search<Member[]>(`/api/members`, keyword);
   }
+
 
 }

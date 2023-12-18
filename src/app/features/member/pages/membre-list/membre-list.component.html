@@ -1,4 +1,17 @@
+<div class="card-body">
+  <form>
+    <input type="text" name="search" [(ngModel)]="keyword">
+    <button (click)="searchMember()" class="btn btn-outline-success">Rechercher
+      <i class="bi bi-search"></i>
+    </button>
+  </form>
+</div>
+
+
 <table class="table">
+
+
+
   <thead>
   <tr>
     <th scope="col">#</th>

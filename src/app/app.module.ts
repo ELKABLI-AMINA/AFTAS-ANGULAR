@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { MembreListComponent } from './features/member/pages/membre-list/membre-list.component';
 import { MembreAddEditComponent } from './features/member/pages/membre-add-edit/membre-add-edit.component';
 import {HttpClientModule} from "@angular/common/http";
-import {ReactiveFormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { FishListComponent } from './features/fish/pages/fish-list/fish-list.component';
 import { FishAddEditComponent } from './features/fish/pages/fish-add-edit/fish-add-edit.component';
 import { AddEditCompetitionComponent } from './features/Competition/pages/add-edit-competition/add-edit-competition.component';
@@ -32,7 +32,8 @@ import { AddEditLevelComponent } from './features/Level/pages/add-edit-level/add
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
