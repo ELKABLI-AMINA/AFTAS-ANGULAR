@@ -32,9 +32,7 @@ export class ApiService {
   getFishByName<T>(endpoint: string, data: any): Observable<T> {
     return this.http.get<T>(`${this.baseUrl}${endpoint}`, { params: { num: data } });
   }
-  getCompetitionByCode<T>(endpoint: string, data: any): Observable<T> {
-    return this.http.get<T>(`${this.baseUrl}${endpoint}`, { params: { num: data } });
-  }
+
   Search<T>(endpoint: string, keyword: any): Observable<T> {
     return this.http.get<T>(`${this.baseUrl}${endpoint}`, { params: { num: keyword } });
   }

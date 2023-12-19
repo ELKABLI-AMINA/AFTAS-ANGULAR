@@ -8,6 +8,8 @@ import {AddEditCompetitionComponent} from "./features/Competition/pages/add-edit
 import {ListCompetitionComponent} from "./features/Competition/pages/list-competition/list-competition.component";
 import {ListLevelComponent} from "./features/Level/pages/list-level/list-level.component";
 import {AddEditLevelComponent} from "./features/Level/pages/add-edit-level/add-edit-level.component";
+import {AddRankingComponent} from "./features/ranking/pages/add-ranking/add-ranking.component";
+import {ListRankingComponent} from "./features/ranking/pages/list-ranking/list-ranking.component";
 
 
 const routes: Routes = [
@@ -18,7 +20,9 @@ const routes: Routes = [
   {path:"AddCompetition", component:AddEditCompetitionComponent},
   {path:"listCompetition", component:ListCompetitionComponent},
   {path:"listLevel", component:ListLevelComponent},
-  {path: "AddLevel", component:AddEditLevelComponent}
+  {path: "AddLevel", component:AddEditLevelComponent},
+  {path: "AddRanking", component:AddRankingComponent},
+  {path:"ListRanking", component:ListRankingComponent}
 
 ];
 

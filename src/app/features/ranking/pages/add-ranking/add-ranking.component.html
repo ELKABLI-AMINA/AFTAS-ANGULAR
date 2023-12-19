@@ -1,0 +1,19 @@
+
+{{rankingForm.value | json}}
+
+<form [formGroup]="rankingForm" (ngSubmit)="create()">
+
+  <div class="mb-3">
+    <label class="form-label">Member:</label>
+    <input class="form-control" formControlName="member">
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Competition:</label>
+    <input class="form-control" formControlName="competition">
+  </div>
+
+
+  <button class=" btn btn-success">Save</button>
+
+
+</form>

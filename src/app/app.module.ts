@@ -13,6 +13,8 @@ import { AddEditCompetitionComponent } from './features/Competition/pages/add-ed
 import { ListCompetitionComponent } from './features/Competition/pages/list-competition/list-competition.component';
 import { ListLevelComponent } from './features/Level/pages/list-level/list-level.component';
 import { AddEditLevelComponent } from './features/Level/pages/add-edit-level/add-edit-level.component';
+import { AddRankingComponent } from './features/ranking/pages/add-ranking/add-ranking.component';
+import { ListRankingComponent } from './features/ranking/pages/list-ranking/list-ranking.component';
 
 
 @NgModule({
@@ -25,7 +27,9 @@ import { AddEditLevelComponent } from './features/Level/pages/add-edit-level/add
     AddEditCompetitionComponent,
     ListCompetitionComponent,
     ListLevelComponent,
-    AddEditLevelComponent
+    AddEditLevelComponent,
+    AddRankingComponent,
+    ListRankingComponent
 
   ],
   imports: [
