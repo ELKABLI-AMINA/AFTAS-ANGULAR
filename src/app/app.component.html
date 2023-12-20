@@ -1,52 +1,12 @@
-<nav class="navbar navbar-expand-lg bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" routerLink="/members">Members</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/AddMember">Add- Member</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/fishes">Fish</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/Addfish">Add-Fish</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/AddCompetition">Add-Compétition</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/listCompetition">All-Compétition</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/listLevel">Level</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/AddLevel">Add-Level</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/AddRanking">Add Ranking</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/ListRanking">List-Ranking</a>
-        </li>
+<content>
 
-
-        <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
-        </li>
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+  <div class="app-admin-wrap layout-sidebar-large clearfix">
+    <app-header></app-header>
+    <app-sidebar></app-sidebar>
+    <div class="main-content-wrap sidenav-open d-flex flex-column" style="background-color: rgb(170, 214, 241) !important;">
+      <div class="separator-breadcrumb border-top mt-5"></div>
+      <router-outlet></router-outlet>
+      <app-footer></app-footer>
     </div>
   </div>
-</nav>
-<router-outlet></router-outlet>
+</content>
